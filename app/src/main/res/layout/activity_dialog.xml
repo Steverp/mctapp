@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorButtonNormal"
+    android:padding="20dp"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txttitlews"
+        android:textStyle="normal|bold"
+        android:background="@drawable/rounded_textview"
+        android:lineSpacingExtra="10sp"
+        android:layout_weight="0.32"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_message"
+        android:text="Texto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.80">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120sp"
+            app:srcCompat="@drawable/ic_img"
+            android:id="@+id/imagen"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/etworkstep"
+            android:layout_marginTop="26dp" />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etworkstep"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Texto Aqui"
+            android:layout_width="wrap_content"
+            android:lines="4"
+            android:maxWidth="110sp"
+            android:layout_alignBottom="@+id/imagen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen"
+            android:layout_alignLeft="@+id/etworkstep"
+            android:layout_alignStart="@+id/etworkstep">
+
+            <ImageButton
+                android:layout_width="65sp"
+                app:srcCompat="@drawable/ic_accept"
+                android:id="@+id/btncerrar"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:layout_width="65sp"
+                app:srcCompat="@drawable/ic_pause"
+                android:id="@+id/btnpausable"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:layout_width="65sp"
+                app:srcCompat="@drawable/ic_ignore"
+                android:id="@+id/btnignore"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:layout_width="65sp"
+                app:srcCompat="@drawable/ic_camera"
+                android:id="@+id/btnphoto"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlang"
+        android:visibility="gone" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlong"
+        android:visibility="gone" />
+
+
+</LinearLayout>
